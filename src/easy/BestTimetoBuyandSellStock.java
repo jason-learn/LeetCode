@@ -21,6 +21,7 @@ public class BestTimetoBuyandSellStock {
 		return max[prices.length-1];
 	}
 	
+	//第二种方案，O(n)复杂度
 	public int maxProfit2(int[] prices) {       
         if (prices.length == 0)
         {
