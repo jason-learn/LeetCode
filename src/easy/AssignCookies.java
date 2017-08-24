@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class AssignCookies {
 	public int findContentChildren(int[] g, int[] s) {
-		//将g和s排序
+	
+	//将g和s排序
         Arrays.sort(g);
         Arrays.sort(s);
         int num=0;
@@ -21,10 +22,8 @@ public class AssignCookies {
         }
         //找到g中标记的数目
         for(int i=0;i<g.length;i++){
-        	if(g[i]==0)
-        		num++;
-        }
-         
+        	if(g[i]==0) num++;
+        }         
 		return num;
     }
 
@@ -34,8 +33,6 @@ public class AssignCookies {
 		int[] g={1,2,3};
 		int[] s={1,1};
 		System.out.println(a.findContentChildren(g, s));
-		
-
 	}
 
 }
