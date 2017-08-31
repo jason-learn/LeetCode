@@ -14,10 +14,8 @@ package easy;
 //递归求节点的值addsum！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
 
 public class ConvertBSTtoGreaterTree {
-	 public TreeNode convertBST(TreeNode root) {
-		 
-		 addsum(root);
-		 
+	 public TreeNode convertBST(TreeNode root) {		 
+		 addsum(root);		 
 		 return root;
 	        
 	    }
