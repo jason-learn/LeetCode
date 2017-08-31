@@ -16,8 +16,7 @@ package easy;
 public class ConvertBSTtoGreaterTree {
 	 public TreeNode convertBST(TreeNode root) {		 
 		 addsum(root);		 
-		 return root;
-	        
+		 return root;	        
 	    }
 	 int sum =0;
 	 public void addsum(TreeNode root){
