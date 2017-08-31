@@ -3,7 +3,7 @@ package easy;
 //70. Climbing Stairs
 public class ClimbingStairs {
 	public int climbingStairs(int n){
-		//找规律发现是fabonacci数列问题
+		// fabonacci鏁板垪锛屾壘瑙勫緥
 		if(n==0 || n==1 || n==2) return n;
 		int[] steps = new int[n];
 		steps[0]=1;
