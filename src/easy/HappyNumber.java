@@ -22,7 +22,6 @@ public class HappyNumber {
 				return true;
 			else
 				n = squareSum;
-
 		}
 		return false;
 	}
