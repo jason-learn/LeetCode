@@ -10,8 +10,7 @@ public class ConstructtheRectangle {
 			 if(area%width==0){
 				output[0]=area/width; //length
 				output[1]=width; //width
-				break;
-				
+				break;				
 			 }
 		 }
 		 return output;
