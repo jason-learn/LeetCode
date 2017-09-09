@@ -3,8 +3,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.*;
 
 //500. Keyboard Row
-public class KeyboardRow {
-	 
+public class KeyboardRow {	 
 	public boolean contain(String a){
 		String[] row1 = {"q","w","e","r","t","y","u","i","o","p","Q","W","E","R","T","Y","U","I","O","P"};
 		String[] row2 = {"a","s","d","f","g","h","j","k","l","A","S","D","F","G","H","J","K","L"};
@@ -60,18 +59,14 @@ public class KeyboardRow {
 	public String[] findWords(String[] words) {
 		ArrayList<String> output = new ArrayList<String>();    //使用ArrayList可变大小的数组
 		//String[] output= new String[words.length];
-		
-		
-	    
+		    
 		int count = -1;
 		for(int i=0;i< words.length;i++){
 			 
-			if(contain2(words[i]))           //如果同一数组则加入output
-				
+			if(contain2(words[i]))           //如果同一数组则加入output			
 				output.add(words[i]);
 			
-		}
-		 
+		}		 
 		String[] out = (String[])output.toArray(new String[output.size()]);   //如何将ArrayList转化为string[]
 		return out;
 	        
