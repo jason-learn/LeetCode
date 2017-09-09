@@ -8,8 +8,7 @@ public class FizzBuzz {
 		for(int i=1;i<n+1;i++){
 			if((i%3==0)&&(i%5==0)){    //尽量使用i%15==0效率更高
 				list.add("FizzBuzz");
-			}
-			
+			}			
 			else if(i%3==0){
 				list.add("Fizz");
 			}
