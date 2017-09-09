@@ -30,8 +30,7 @@ public class DetectCapital {
 		else{
 			String restword = word.substring(1,word.length());
 			if((detectSameclass(restword)==restword.length())||(detectSameclass(restword)==0))
-				return true;
-			
+				return true;			
 		}
 		
 		return false;
