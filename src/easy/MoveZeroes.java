@@ -5,20 +5,19 @@ import java.util.Arrays;
 
 public class MoveZeroes {
 	 public void moveZeroes(int[] nums) {
-		 int zeroCount=0;//¼ÇÂ¼Ç°Ãæ³öÏÖµÄ0µÄ¸öÊı
+		 int zeroCount=0;//è®°å½•å‰é¢å‡ºç°çš„0çš„ä¸ªæ•°
 		 for(int i=0;i<nums.length;i++){
 			 if(nums[i]==0){
 				 zeroCount++;
 			 }
 			 else {
-				 nums[i-zeroCount]=nums[i]; //·Ç0Êı×ÖÇ°ÒÆ
+				 nums[i-zeroCount]=nums[i]; //é0æ•°å­—å‰ç§»
 			}
 		 }
-		 //×îºó½«ºóÃæ¶¼²¹Î»0
+		 //æœ€åå°†åé¢éƒ½è¡¥ä½0
 		 for(int j=nums.length-zeroCount;j<nums.length;j++){
 			 nums[j]=0;
-		 }
-	        
+		 }	        
 	    }
 
 	public static void main(String[] args) {
