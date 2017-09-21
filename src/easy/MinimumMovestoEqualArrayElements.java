@@ -1,22 +1,17 @@
 package easy;
-
 import java.util.Arrays;
-
- 
 
 //453. Minimum Moves to Equal Array Elements
 public class MinimumMovestoEqualArrayElements {
 	public int minMoves(int[] nums) {
-//		°Ñ×îĞ¡µÄn-1¸öÔªËØ¶¼¼Ó1£¬Ïàµ±ÓÚËùÓĞÔªËØ¶¼¼Ó1£¬×î´óµÄÔªËØ¼õÒ»£¬ÒòÎªÌâÄ¿ÒªÇó×îºóµÄÔªËØÖµÏàÍ¬¼´¿É£¬ËùÒÔËùÓĞÔªËØ¼ÓÒ»²Ù×÷ÍêÈ«¿ÉÒÔÈ¥µô£¬
-//		¼´Ã¿Ò»´ÎµÄ¡°ÒÆ¶¯¡±²Ù×÷µÈ¼ÛÓÚ°Ñ×î´óÔªËØ¼õÒ»¡£×îÖÕ×´Ì¬ÎªÃ¿¸öÔªËØ¶¼µÈÓÚ³õÊ¼Êı×éµÄ×îĞ¡Öµ£¬sum(nums)-min(nums)*len(nums)¡£
+//		æŠŠæœ€å°çš„n-1ä¸ªå…ƒç´ éƒ½åŠ 1ï¼Œç›¸å½“äºæ‰€æœ‰å…ƒç´ éƒ½åŠ 1ï¼Œæœ€å¤§çš„å…ƒç´ å‡ä¸€ï¼Œå› ä¸ºé¢˜ç›®è¦æ±‚æœ€åçš„å…ƒç´ å€¼ç›¸åŒå³å¯ï¼Œæ‰€ä»¥æ‰€æœ‰å…ƒç´ åŠ ä¸€æ“ä½œå®Œå…¨å¯ä»¥å»æ‰ï¼Œ
+//		å³æ¯ä¸€æ¬¡çš„â€œç§»åŠ¨â€æ“ä½œç­‰ä»·äºæŠŠæœ€å¤§å…ƒç´ å‡ä¸€ã€‚æœ€ç»ˆçŠ¶æ€ä¸ºæ¯ä¸ªå…ƒç´ éƒ½ç­‰äºåˆå§‹æ•°ç»„çš„æœ€å°å€¼ï¼Œsum(nums)-min(nums)*len(nums)ã€‚
 		Arrays.sort(nums);
 		int moves=0;
 		for(int i=1;i<nums.length;i++){
 			moves+=nums[i]-nums[0];
-		}
-		
-		return moves;
-	        
+		}		
+		return moves;	        
 	}
 
 	public static void main(String[] args) {
