@@ -30,7 +30,8 @@ public class IntersectionofTwoArrays {
 		 while(i.hasNext())
 			 result[index++]=i.next();
 		 
-		 return result;	        
+		 return result;
+	        
 	}
 
 	public static void main(String[] args) {
